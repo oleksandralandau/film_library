@@ -51,7 +51,7 @@ serial_5 = Series(name="Bosch", year="2014", genre="drama", episode="9", season=
 # creating lists, have few experiments =)
 library_1 = [Films, Series]
 library_2 = [serial_1.name, serial_2.name, serial_3.name, serial_4.name, serial_5.name, film_1.name, film_2.name, film_3.name, film_4.name, film_5.name]
-library_3 = [serial_1, serial_2, serial_3, serial_4, serial_5, film_1.name, film_2.name, film_3.name, film_4.name, film_5.name]
+library_3 = [serial_1, serial_2, serial_3, serial_4, serial_5, film_1, film_2, film_3, film_4, film_5]
 
 #get_movies = sorted(library_2, key=lambda Films: serial_5.name)
 #get_series = sorted(library_2, key=lambda Series: Series.name)
