@@ -1,4 +1,3 @@
-# I haven't finished yet. just sending before meeting
 print("Film library")
 
 
@@ -14,9 +13,6 @@ class Films:
 
     def watch(self):
         print(f"{self.name} ({self.year})")
-
-    def get_movies(self):
-        print(sorted(library_2))
 
 
 film_1 = Films(name="A Space Odyssey", year="1968", genre="science fiction")
@@ -36,7 +32,7 @@ class Series:
         self.current_views = 0
 
     def watching(self):
-        print(f"{self.name} S0{self.season}EO{self.episode}")
+        print(f"{self.name} S0{self.season}E0{self.episode}")
 
     def play(self, step=1):
         print(self.current_views + step)
@@ -47,16 +43,15 @@ serial_2 = Series(name="Fringe", year="2008", genre="science fiction", episode="
 serial_3 = Series(name="Scrubs", year="2001", genre="drama", episode="7", season=3)
 serial_4 = Series(name="Supernatural", year="2005", genre="science fiction", episode="3", season=1)
 serial_5 = Series(name="Bosch", year="2014", genre="drama", episode="9", season=2)
+pass
 
 # creating lists, have few experiments =)
 library_1 = [Films, Series]
 library_2 = [serial_1.name, serial_2.name, serial_3.name, serial_4.name, serial_5.name, film_1.name, film_2.name, film_3.name, film_4.name, film_5.name]
 library_3 = [serial_1, serial_2, serial_3, serial_4, serial_5, film_1, film_2, film_3, film_4, film_5]
 
-#get_movies = sorted(library_2, key=lambda Films: serial_5.name)
-#get_series = sorted(library_2, key=lambda Series: Series.name)
 
 # just for testing
-Series.watching(serial_2)
-Series.play(serial_2)
-Films.watch(film_3)
+serial_2.watching()
+serial_2.play()
+film_3.watch()
